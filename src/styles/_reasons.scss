@@ -1,0 +1,98 @@
+@use 'variables';
+
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+
+    @media (max-width: 640px) {        
+        grid-template-columns: 1fr;
+    }
+
+    .reason {
+        position: relative;
+        &--photo1 {
+            position: relative;
+            background-image: url(../images/minha-foto.jpg);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor alpha para controlar a opacidade */
+            }
+        }
+
+        &--photo2 {
+            position: relative;
+            background-image: url(../images/foto-profissional.jpg);
+            background-position-y: -160px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor alpha para controlar a opacidade */
+            }
+        }
+
+        &--photo3 {
+            position: relative;
+            background-image: url(../images/violão.webp);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor alpha para controlar a opacidade */
+            }
+        }
+
+        &--photo4 {
+            position: relative;
+            background-image: url(../images/família.jpg);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor alpha para controlar a opacidade */
+            }
+        }
+        
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 500px;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        padding: 20px;
+
+        &__title {
+            position: absolute;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            position: absolute;
+            top: 60px;
+            line-height: 22px;
+        }
+    }
+}
