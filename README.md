@@ -6,4 +6,4 @@
 
 ## deploy:
 
-✔️ ...
+✔️ https://my-birthday-event-henna.vercel.app/
